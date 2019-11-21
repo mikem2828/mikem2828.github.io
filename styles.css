@@ -24,12 +24,30 @@ h1{
     line-height:50px;
     font-weight:bold;
 }
+h2{
+    font-size:24px;
+    line-height:40px;
+    font-weight:bold;
+}
+a{
+    color:#58b;
+}
+a:hover{
+    color:#369;
+}
+section{
+    border-top:2px dashed #eee;
+    padding:50px 0;
+    max-width:800px;
+    margin:0 auto;
+}
 .hero{
-    outline:1px solid red;
     height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    border:0;
+    padding:0;
 }
 .hero img{
     width:100%;
@@ -47,4 +65,38 @@ h1{
 .headshot:hover{
     transform:rotate(360deg);
     box-shadow:0px 0px 100px 50px #fc0
+}
+.list li{
+    display:inline;
+    font-weight:bold;
+}
+.list li:not(:last-child):after{
+    content:",";
+
+}
+.blocklist > li{
+    display:flex;
+    justify-content:center;
+    border-style:solid;
+    border-width:10px;
+    border-color: #fff #444;
+}
+.blocklist >li > img{
+    width:150px;
+    height:150px;
+    margin:0 10px;
+}
+.blocklist > li > div{
+    flex-grow:1;
+    align-self:center;
+}
+.blocklist > li:nth-child(odd){
+    flex-direction:row;
+    text-align:left;
+    border-left-width:0;
+}
+.blocklist > li:nth-child(even){
+    flex-direction:row-reverse;
+    text-align:right;
+    border-right-width:0;
 }
