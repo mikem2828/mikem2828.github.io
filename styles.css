@@ -69,7 +69,7 @@ address{
 }
 .headshot:hover{
     transform:rotate(360deg);
-    box-shadow:0px 0px 100px 50px #fc0
+    box-shadow:0px 0px 100px 50px #fc0;
 }
 .list li{
     display:inline;
@@ -77,33 +77,38 @@ address{
 }
 .list li:not(:last-child):after{
     content:",";
-
 }
-.blocklist > li{
+.blocklist1 > li{
     display:flex;
     justify-content:center;
     border-style:solid;
     border-width:10px;
     border-color: #fff #444;
 }
-.blocklist >li > img{
+.blocklist1 >li > img{
     width:150px;
     height:150px;
     margin:0 10px;
 }
-.blocklist > li > div{
+.blocklist1 > li > div{
     flex-grow:1;
     align-self:center;
 }
-.blocklist > li:nth-child(odd){
+.blocklist1 > li:nth-child(odd){
     flex-direction:row;
     text-align:left;
     border-left-width:0;
 }
-.blocklist > li:nth-child(even){
+.blocklist1 > li:nth-child(even){
     flex-direction:row-reverse;
     text-align:right;
     border-right-width:0;
+}
+.blocklist2 > li{
+    display:flex;
+}
+.blocklist2 >li >div{
+    flex-grow:1;
 }
 .prose{
     text-align:justify;
